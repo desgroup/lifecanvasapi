@@ -21,4 +21,5 @@ Route::group(['prefix' => 'v1'], function(){
     Route::get('lessons/{id}/tags', 'TagsController@lessonTags');
 	Route::resource('lessons', 'LessonsController');
 	Route::resource('tags', 'TagsController');
+    Route::post('/test', 'iPhoneController@login');
 });
